@@ -11,5 +11,5 @@ Filled from garment reference photo (packaged phone shot).
                    silver-white, scattered in a diagonal grid, clustering
                    denser toward the lower border
 {fabric}         = silk with a soft sheen (art silk / satin-silk look)
-{hero_image}     = IMAGE 2026-07-09 20:33:37.jpg
+{hero_image}     = IMAGE 2026-07-09_20-33-37.jpg
 ```
