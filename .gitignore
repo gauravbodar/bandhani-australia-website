@@ -1,0 +1,7 @@
+
+.env
+.env.*
+!.env.example
+images/**/_hero_916.jpg
+images/po002-dana-bandhani-standard/po002-dana-bandhani-standard-twirl.mp4
+images/po002-white-choli/po002-white-choli-twirl.mp4
