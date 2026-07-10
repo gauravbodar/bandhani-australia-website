@@ -6,50 +6,49 @@
 
 const PRODUCTS = [
   {
+    // PO-002 · po002-dana-bandhani-standard — images in folder, hero-N.jpg convention
     id: "p001",
-    name: "Crimson Gaji Silk Bandhani Saree",
-    subtitle: "Pure Gaji Silk · Fine Bandhani Dots",
-    description: "Classic Jamnagar Borjaal pattern in vibrant red with ivory dots. Traditional artisan work from the Khatri families of Jamnagar. Suitable for weddings and festive occasions.",
-    fabric: "Pure Gaji Silk",
+    name: "Dana Bandhani Standard Saree",
+    subtitle: "Silk · Dana Bandhani Diamond Dots",
+    description: "Deep royal purple silk saree with dana bandhani diamond-shaped dots in gold and silver-white, scattered in a diagonal grid that clusters denser toward the lower border. A soft-sheen art silk drape for weddings and receptions.",
+    fabric: "Silk (soft-sheen art silk)",
     blouse: "Matching blouse piece included (0.8m)",
     length: "5.5 metres saree + 0.8m blouse",
     care: "Dry clean only. Do not wring. Store folded in muslin cloth.",
-    price: "AUD 420",
-    status: "in-stock",
+    price: "AUD 000", // TODO: fill Sell Rate from Stock sheet (PO-002)
+    status: "in-stock", // TODO: confirm from Stock sheet Status column
     category: "saree",
-    occasion: ["Wedding", "Festive"],
+    occasion: ["Wedding", "Reception", "Festive"],
     finishing: ["Roll Press", "Semi-Iron", "Crush"],
     images: [
-      "images/p001-1.jpg",
-      "images/p001-2.jpg",
-      "images/p001-3.jpg",
-      "images/p001-4.jpg",
+      "images/po002-dana-bandhani-standard/hero-1.jpg",
+      "images/po002-dana-bandhani-standard/hero-2.jpg",
+      "images/po002-dana-bandhani-standard/hero-3.jpg",
+      "images/po002-dana-bandhani-standard/hero-4.jpg",
     ],
-    placeholderColor: "#8B1A1A",
-    whatsappText: "Hi, I'm interested in the Crimson Gaji Silk Bandhani Saree from your collection."
+    placeholderColor: "#4A148C",
+    whatsappText: "Hi, I'm interested in the Dana Bandhani Standard Saree from your collection."
   },
   {
+    // PO-002 · po002-white-choli — single hero image (currently named po002-white-choli-hero.jpg)
     id: "p002",
-    name: "Royal Blue Georgette Bandhani Dupatta",
-    subtitle: "Pure Georgette · Borjaal Pattern",
-    description: "Vibrant royal blue with classic white Borjaal dots. Lightweight georgette drape, perfect for casual and party styling.",
-    fabric: "Pure Georgette",
-    blouse: "N/A — Dupatta only",
-    length: "2.5 metres",
-    care: "Gentle hand wash in cold water. Do not bleach.",
-    price: "AUD 180",
-    status: "in-stock",
-    category: "dupatta",
-    occasion: ["Casual", "Party"],
-    finishing: ["Roll Press", "Semi-Iron", "Crush"],
+    name: "White Bandhani Chaniya Choli",
+    subtitle: "Silk · Bandhani Skirt · Mirror-Work Border",
+    description: "Ivory-white chaniya (skirt) with bandhani dotwork and a deep red-maroon border, paired with a royal blue embroidered choli finished with a gold mirror-work border. Floral embroidery and mirror detailing throughout — a festive Navratri statement piece.",
+    fabric: "Silk (soft flowing drape)",
+    blouse: "Included — royal blue embroidered choli",
+    length: "Chaniya choli set",
+    care: "Dry clean only. Mirror and embroidery work is delicate.",
+    price: "AUD 000", // TODO: fill Sell Rate from Stock sheet (PO-002)
+    status: "in-stock", // TODO: confirm from Stock sheet Status column
+    category: "choli",
+    occasion: ["Navratri", "Festive"],
+    finishing: ["Roll Press", "Semi-Iron"],
     images: [
-      "images/p002-1.jpg",
-      "images/p002-2.jpg",
-      "images/p002-3.jpg",
-      "images/p002-4.jpg",
+      "images/po002-white-choli/po002-white-choli-hero.jpg",
     ],
-    placeholderColor: "#1A3A8B",
-    whatsappText: "Hi, I'm interested in the Royal Blue Georgette Bandhani Dupatta from your collection."
+    placeholderColor: "#B71C1C",
+    whatsappText: "Hi, I'm interested in the White Bandhani Chaniya Choli from your collection."
   },
   {
     id: "p003",
