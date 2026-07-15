@@ -4,6 +4,7 @@ Filled from header-1.png (Pippit AI studio render — watermark needs cropping b
 ```
 {product_name}   = Magenta Bandhani Saree
 {product_id}     = po002-magenta-bandhani-saree 
+{hero_image}     = hero-1.png
 {type}           = Saree
 {base_colour}    = deep magenta-purple (orchid/violet-magenta)
 {accent_colour}  = gold, silver-white, and soft pink diamond-shaped dots

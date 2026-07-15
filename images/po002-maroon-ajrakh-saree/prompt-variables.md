@@ -1,4 +1,5 @@
 {product_name}   = Maroon Ajrakh-Print Saree   [DRAFT — rename pending confirmation]
+{hero_image}     = header-1.png
 {product_id}     = po003-maroon-ajrakh-saree
 {type}           = Saree
 {base_colour}    = deep maroon / oxblood red

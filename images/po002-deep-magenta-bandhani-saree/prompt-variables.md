@@ -4,6 +4,7 @@ Filled from header-1.png (Pippit AI studio render — watermark needs cropping b
 
 ```
 {product_name}   = Deep Magenta Bandhani Saree   [DRAFT — confirm intended name]
+{hero_image}     = hero-1.png
 {product_id}     = po002-deep-magenta-bandhani-saree
 {type}           = Saree
 {base_colour}    = deep wine-magenta / rani pink
