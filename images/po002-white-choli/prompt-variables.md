@@ -1,5 +1,5 @@
 PRODUCT: po002-white-choli
-
+{hero_image}     = header-1.jpg
 {product_name}   = White Bandhani Chaniya Choli
 {product_id}     = po002-white-choli
 {type}           = Chaniya Choli
@@ -7,4 +7,3 @@ PRODUCT: po002-white-choli
 {accent_colour}  = royal blue embroidered choli with gold mirror-work border
 {pattern_note}   = bandhani dotwork on skirt, floral embroidery and mirror work on border and choli
 {fabric}         = silk with a soft flowing drape
-{hero_image}     = po002-white-choli-hero.jpg
