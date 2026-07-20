@@ -1,838 +1,447 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta -->
-
-  <title>Bandhani Australia — Authentic Jamnagar Bandhani Sarees &amp; Dupattas</title>
-  <meta name="description" content="Shop handcrafted Jamnagar Bandhani sarees and dupattas in Australia. In-stock pieces available for immediate dispatch to Sydney, Melbourne, Brisbane, Adelaide and Perth. Contact via WhatsApp." />
-  <meta name="keywords" content="Bandhani sarees Australia, Jamnagar Bandhani, Bandhani dupatta, Indian sarees Sydney, Indian sarees Melbourne, Gujarati sarees Australia, Bandhej Australia" />
+  <title>Bandhani Australia — The Tie-Dye Craft of Jamnagar, in Australia</title>
+  <meta name="description" content="Handcrafted Jamnagar Bandhani sarees, dupattas and chaniya cholis in Australia. A curated drop of tie-dye pieces, ordered personally over WhatsApp. Dispatch to Sydney, Melbourne, Brisbane, Adelaide and Perth." />
+  <meta name="keywords" content="Bandhani sarees Australia, Jamnagar Bandhani, Bandhani dupatta, chaniya choli Australia, Indian sarees Sydney, Indian sarees Melbourne, Bandhej Australia" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bandhaniaustralia.com.au/" />
 
   <!-- Open Graph -->
-
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Bandhani Australia — Authentic Jamnagar Bandhani Sarees &amp; Dupattas" />
-  <meta property="og:description" content="The only Jamnagar Bandhani specialist in Australia. In-stock pieces for immediate dispatch. Personal WhatsApp service." />
+  <meta property="og:title" content="Bandhani Australia — The Tie-Dye Craft of Jamnagar" />
+  <meta property="og:description" content="Handcrafted Jamnagar Bandhani, curated in Australia. Ordered personally over WhatsApp." />
   <meta property="og:url" content="https://bandhaniaustralia.com.au/" />
-  <meta property="og:image" content="hero-bg.jpg" />
+  <meta property="og:image" content="images/po002-dana-bandhani-standard/hero-1.jpg" />
   <meta property="og:locale" content="en_AU" />
 
   <!-- Twitter Card -->
-
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bandhani Australia — Authentic Jamnagar Bandhani Sarees &amp; Dupattas" />
-  <meta name="twitter:description" content="The only Jamnagar Bandhani specialist in Australia. In-stock pieces for immediate dispatch." />
+  <meta name="twitter:title" content="Bandhani Australia — The Tie-Dye Craft of Jamnagar" />
+  <meta name="twitter:description" content="Handcrafted Jamnagar Bandhani, curated in Australia." />
 
-  <!-- Google Fonts -->
-
+  <!-- Fonts: Cormorant Garamond (display serif) + Inter (UI sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- =============================================
+  <!-- =========================================================
        NAVIGATION
-       ============================================= -->
-
+       ========================================================= -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <div class="nav-inner">
 
-```
-    <!-- Logo -->
-    <a href="#" class="nav-logo" aria-label="Bandhani Australia — Home">
-      <div class="logo-emblem" aria-hidden="true">BA</div>
-      <div class="logo-text">
-        <span class="brand-name">Bandhani Australia</span>
-        <span class="brand-tagline">Jamnagar's Finest. Yours in Australia.</span>
+        <a href="#hero" class="nav-logo" aria-label="Bandhani Australia — Home">
+          <span class="logo-emblem" aria-hidden="true">BA</span>
+          <span class="logo-text">
+            <span class="brand-name">Bandhani Australia</span>
+            <span class="brand-tagline">The tie-dye craft of Jamnagar</span>
+          </span>
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#craft">The Craft</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#how-made">How It's Made</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="cart-toggle" id="cart-toggle" aria-label="Open your selection">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
       </div>
-    </a>
-
-    <!-- Desktop Links -->
-    <ul class="nav-links" role="list">
-      <li><a href="#collection">Collection</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <!-- Desktop CTA -->
-    <div class="nav-cta">
-      <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20Bandhani%20collection"
-         class="btn btn-whatsapp"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Order via WhatsApp — opens WhatsApp chat">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        Order via WhatsApp
-      </a>
     </div>
-
-    <!-- Hamburger -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </div>
-</div>
-```
-
   </nav>
 
   <!-- Mobile Navigation Overlay -->
-
   <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
     <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close mobile menu">&times;</button>
+    <a href="#craft">The Craft</a>
     <a href="#collection">Collection</a>
-    <a href="#services">Services</a>
+    <a href="#how-made">How It's Made</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20Bandhani%20collection"
-       target="_blank" rel="noopener noreferrer"
-       class="btn btn-whatsapp"
-       aria-label="Order via WhatsApp">Order via WhatsApp</a>
   </div>
 
-  <!-- =============================================
-       HERO
-       ============================================= -->
-
-  <section class="hero" id="hero" aria-label="Hero banner">
-    <div class="hero-bg" role="img" aria-label="Rich Bandhani fabric in jewel tones"></div>
+  <!-- =========================================================
+       HERO — text-forward, product-light (the Nike principle)
+       ========================================================= -->
+  <header class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-bg" role="img" aria-label="A hand-tied Jamnagar Bandhani saree in deep royal purple"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
 
-```
-<div class="container">
-  <div class="hero-content">
-
-    <!-- Badge -->
-    <div class="hero-badge" aria-label="Ships across Australia">✦ Ships Across Australia ✦</div>
-
-    <!-- Variation 1 — Emotional Heritage (default active) -->
-    <div class="hero-variation active" id="hero-v1">
-      <h1 class="hero-title">Every Knot Tells a Story.</h1>
-      <p class="hero-subtitle">Authentic Jamnagar Bandhani — Handcrafted for You, Here in Australia.</p>
-      <p class="hero-body">
-        Thousands of tiny knots. Vibrant dyes. Generations of mastery from the artisan families of Jamnagar. Each Bandhani saree and dupatta in our collection carries that living heritage — now available in your city, ready when you are.
-      </p>
-      <div class="hero-actions">
-        <a href="#collection" class="btn btn-primary" aria-label="Explore the collection">Explore the Collection</a>
-        <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Bandhani%20piece"
-           class="btn btn-secondary"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Contact to order via WhatsApp">Contact to Order</a>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow">Jamnagar · Gujarat — now in Australia</p>
+        <h1 class="hero-title">Every knot,<br>tied by hand.</h1>
+        <p class="hero-lede">
+          Bandhani is a thousand years of tie-dye tradition — thousands of tiny knots, pinched and bound
+          before the dye ever touches the cloth. We bring that living craft, straight from the artisan
+          families of Jamnagar, to your city.
+        </p>
+        <div class="hero-actions">
+          <a href="#collection" class="btn btn-primary">Explore the Collection</a>
+          <a href="#craft" class="btn btn-ghost">The Story of the Craft</a>
+        </div>
       </div>
     </div>
+  </header>
 
-    <!-- Variation 2 — Scarcity (hidden) -->
-    <div class="hero-variation" id="hero-v2">
-      <h1 class="hero-title">50 Pieces. One Craft. Zero Compromises.</h1>
-      <p class="hero-subtitle">Our Current Collection — Genuine Bandhani, Physically Here in Australia.</p>
-      <p class="hero-body">
-        We carry exactly 50 carefully selected Bandhani sarees and dupattas at any time. No fillers, no generics — just authentic Jamnagar Bandhani, ready for immediate dispatch to your door.
-      </p>
-      <div class="hero-actions">
-        <a href="#collection" class="btn btn-primary">View Current Collection</a>
+  <!-- =========================================================
+       THE CRAFT — sell the excellence, product as proof
+       ========================================================= -->
+  <section class="craft-section" id="craft" aria-labelledby="craft-heading">
+    <div class="container">
+      <div class="craft-grid">
+
+        <div class="craft-media reveal">
+          <img src="images/po002-dana-bandhani-standard/detail-1.jpg"
+               alt="Close-up of hand-tied dana Bandhani knots on silk"
+               loading="lazy"
+               onerror="this.style.display='none';this.parentElement.classList.add('media-fallback')">
+        </div>
+
+        <div class="craft-text reveal">
+          <p class="eyebrow">The Craft</p>
+          <h2 id="craft-heading">Bandhej —<br>the art of the knot.</h2>
+          <p>
+            Before a single colour appears, an artisan pinches the fabric into thousands of minuscule points
+            and binds each one with thread. Only then is the cloth dyed. Untie the knots and the pattern
+            emerges — dots, diamonds, waves — each one held back from the dye by a hand that has done this
+            ten thousand times.
+          </p>
+          <p>
+            It is slow, exacting work, passed down through generations in Jamnagar and Ahmedabad. No two
+            pieces are ever identical. That imperfection is the signature — proof that a person, not a
+            machine, made this for you.
+          </p>
+          <a href="#collection" class="text-link">See the pieces &rarr;</a>
+        </div>
+
       </div>
     </div>
-
-    <!-- Variation 3 — Occasion (hidden) -->
-    <div class="hero-variation" id="hero-v3">
-      <h1 class="hero-title">Dress for the Moments That Matter.</h1>
-      <p class="hero-subtitle">Bandhani Sarees &amp; Dupattas — from Jamnagar to Your Doorstep in Australia.</p>
-      <p class="hero-body">
-        Whether it's a wedding, a puja, a Navratri celebration, or simply the joy of wearing something beautiful — our Bandhani pieces are made for women who love tradition without compromising on quality.
-      </p>
-      <div class="hero-actions">
-        <a href="#collection" class="btn btn-primary">Shop the Collection</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-```
-
   </section>
 
-  <!-- =============================================
-       TRUST BAR
-       ============================================= -->
-
-  <div class="trust-bar" role="complementary" aria-label="Trust highlights">
-    <div class="container">
-      <div class="trust-bar-inner">
-        <div class="trust-item">
-          <span class="trust-icon" aria-hidden="true">🪡</span>
-          <span>Authentic Jamnagar Craft</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon" aria-hidden="true">🇦🇺</span>
-          <span>Based in Australia</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon" aria-hidden="true">📦</span>
-          <span>Immediate Dispatch on In-Stock Pieces</span>
-        </div>
-        <div class="trust-item">
-          <span class="trust-icon" aria-hidden="true">💬</span>
-          <span>Personal WhatsApp Service</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- =============================================
-       COLLECTION
-       ============================================= -->
-
+  <!-- =========================================================
+       COLLECTION — the grid, filterable
+       ========================================================= -->
   <section class="collection-section" id="collection" aria-labelledby="collection-heading">
     <div class="container">
 
-```
-  <div class="section-header">
-    <h2 id="collection-heading">Our Current Collection</h2>
-    <p>These are the Bandhani sarees and dupattas physically with us in Australia right now. Each piece has been hand-selected from Jamnagar's finest artisan workshops.</p>
-  </div>
-
-  <!-- Mobile filter toggle -->
-  <button class="mobile-filter-btn" id="mobile-filter-btn" onclick="toggleMobileSidebar()" aria-label="Open filters" aria-expanded="false">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="10" y2="18"/></svg>
-    Filter &amp; Sort
-    <span class="active-filter-count" id="active-filter-count" aria-live="polite"></span>
-  </button>
-
-  <!-- Sidebar overlay (mobile) -->
-  <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMobileSidebar()"></div>
-
-  <div class="collection-layout">
-
-    <!-- ── FILTER SIDEBAR ── -->
-    <aside class="filter-sidebar" id="filter-sidebar" aria-label="Product filters">
-
-      <div class="sidebar-header">
-        <span class="sidebar-title">Filters</span>
-        <button class="clear-all-btn" onclick="clearAllFilters()" aria-label="Clear all filters">Clear all</button>
-        <button class="sidebar-close-btn" onclick="toggleMobileSidebar()" aria-label="Close filters">&times;</button>
+      <div class="section-header reveal">
+        <p class="eyebrow">The Collection</p>
+        <h2 id="collection-heading">Pieces, here in Australia</h2>
+        <p class="section-sub">Each piece is physically with us and hand-selected from Jamnagar's workshops. Scroll slowly — add what you love, and we finish the order personally on WhatsApp.</p>
       </div>
 
-      <!-- ── ACTIVE: Colour ── -->
-      <div class="filter-group" id="fg-color">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-color">
-          Colour
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-color">
-          <div class="color-swatches" id="color-swatches" role="group" aria-label="Filter by colour"></div>
+      <!-- Filters -->
+      <div class="filter-controls reveal">
+        <div class="filter-row">
+          <span class="filter-label">Type</span>
+          <div class="filter-tabs" id="filter-type" role="tablist" aria-label="Filter by type"></div>
         </div>
-      </div>
-
-      <!-- ── ACTIVE: Availability ── -->
-      <div class="filter-group" id="fg-availability">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-availability">
-          Availability
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-availability">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="status" value="in-stock" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            In Stock
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="status" value="made-to-order" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Made to Order
-          </label>
+        <div class="filter-row" id="filter-collection-wrap">
+          <span class="filter-label">Drop</span>
+          <div class="filter-tabs" id="filter-collection" role="tablist" aria-label="Filter by drop"></div>
         </div>
-      </div>
-
-      <!--
-      HIDDEN FILTER GROUPS — remove the HTML comment tags AND the style="display:none"
-      attribute on the outer div to activate any of these in the future.
-
-      ── Type ──
-      <div class="filter-group" id="fg-type" style="display:none">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-type">
-          Type
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-type">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="type" value="saree" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Saree
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="type" value="dupatta" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Dupatta
-          </label>
-        </div>
-      </div>
-
-      ── Color Type ──
-      <div class="filter-group" id="fg-colortype" style="display:none">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-colortype">
-          Color Type
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-colortype">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="colortype" value="single-tone" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Single Tone
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="colortype" value="multi-tone" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Multi Tone
-          </label>
-        </div>
-      </div>
-
-      ── Material ──
-      <div class="filter-group" id="fg-material" style="display:none">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-material">
-          Material
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-material">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="material" value="gaji-silk" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Gaji Silk
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="material" value="georgette" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Georgette
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="material" value="modal-silk" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Modal Silk
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="material" value="cotton" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Cotton
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="material" value="khaddi-georgette" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Khaddi Georgette
-          </label>
-        </div>
-      </div>
-
-      ── Occasion ──
-      <div class="filter-group" id="fg-occasion" style="display:none">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-occasion">
-          Occasion
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-occasion">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Wedding" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Wedding
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Bridal" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Bridal
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Festive" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Festive
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Navratri" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Navratri
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Party" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Party
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="occasion" value="Casual" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Casual
-          </label>
-        </div>
-      </div>
-
-      ── Zari ──
-      <div class="filter-group" id="fg-zari" style="display:none">
-        <button class="filter-group-toggle" aria-expanded="true" aria-controls="fc-zari">
-          Zari
-          <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="2 4 6 8 10 4"/></svg>
-        </button>
-        <div class="filter-group-body" id="fc-zari">
-          <label class="filter-checkbox">
-            <input type="checkbox" name="zari" value="gold-zari" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Gold Zari
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="zari" value="silver-zari" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            Silver Zari
-          </label>
-          <label class="filter-checkbox">
-            <input type="checkbox" name="zari" value="no-zari" onchange="applyFilters()">
-            <span class="checkmark"></span>
-            No Zari
-          </label>
-        </div>
-      </div>
-      -->
-
-    </aside>
-
-    <!-- ── MAIN GRID AREA ── -->
-    <div class="collection-main">
-      <div class="results-bar">
         <p class="results-count" id="results-count" aria-live="polite"></p>
-        <div class="active-chips" id="active-chips" aria-label="Active filters"></div>
       </div>
-      <!-- Product Grid — rendered by script.js from products.js -->
-      <div class="product-grid" id="product-grid" aria-label="Product collection"></div>
-      <p class="no-results" id="no-results" style="display:none">No pieces match your current filters. <button onclick="clearAllFilters()">Clear filters</button></p>
-    </div>
 
-  </div><!-- /collection-layout -->
-</div>
-```
+    </div><!-- /container -->
 
-  </section>
+    <!-- Cinematic collection — one piece per screen, rendered by script.js -->
+    <div class="collection-pieces" id="collection-pieces" aria-label="Product collection"></div>
 
-  <!-- =============================================
-       HOW IT WORKS
-       ============================================= -->
-
-  <section class="how-section section-padding" id="how-to-order" aria-labelledby="how-heading">
     <div class="container">
-      <div class="section-header">
-        <h2 id="how-heading">How to Order</h2>
-        <p>A simple, personal process — the way saree shopping should be.</p>
-      </div>
-
-```
-  <div class="steps-grid">
-    <div class="step-card fade-in">
-      <div class="step-number" aria-hidden="true">1</div>
-      <div class="step-icon" aria-hidden="true">👁</div>
-      <h3>Browse &amp; Choose</h3>
-      <p>Explore our current collection of 50 Bandhani pieces. Find what speaks to you — a saree for a wedding, a dupatta for Navratri, or a piece you've always dreamed of owning.</p>
+      <p class="no-results" id="no-results" style="display:none">
+        No pieces match yet — <button onclick="setFilter('type','all',document.querySelector('#filter-type .filter-tab'));setFilter('collection','all',document.querySelector('#filter-collection .filter-tab')||document.querySelector('#filter-type .filter-tab'))">view everything</button>.
+      </p>
     </div>
-    <div class="step-card fade-in fade-in-delay-1">
-      <div class="step-number" aria-hidden="true">2</div>
-      <div class="step-icon" aria-hidden="true">💬</div>
-      <h3>Reach Out</h3>
-      <p>Contact us via WhatsApp, phone, or email. Share which piece you love, ask questions about fabric and finish, and we'll guide you personally. No bots. No forms.</p>
-    </div>
-    <div class="step-card fade-in fade-in-delay-2">
-      <div class="step-number" aria-hidden="true">3</div>
-      <div class="step-icon" aria-hidden="true">📦</div>
-      <h3>Receive Your Piece</h3>
-      <p>In-stock pieces are dispatched immediately. Custom or similar-design orders are ready in 3–4 weeks. We ship to all Australian metro cities — Sydney, Melbourne, Brisbane, Adelaide, and Perth.</p>
-    </div>
-  </div>
-</div>
-```
-
   </section>
 
-  <!-- =============================================
-       SERVICES
-       ============================================= -->
-
-  <section class="services-section section-padding" id="services" aria-labelledby="services-heading">
+  <!-- =========================================================
+       HOW BANDHANI IS MADE — educational 5-step flow (storytelling, no CTA)
+       ========================================================= -->
+  <section class="howmade-section" id="how-made" aria-labelledby="howmade-heading">
     <div class="container">
-      <div class="section-header">
-        <h2 id="services-heading">Bandhani Services</h2>
-        <p>We don't just sell Bandhani — we transform it.</p>
+      <div class="section-header reveal">
+        <p class="eyebrow">The Craft of Bandhej</p>
+        <h2 id="howmade-heading">How Bandhani is made</h2>
+        <p class="section-sub">A single saree can hold tens of thousands of hand-tied knots. Every dot is the mark of a hand, not a machine — a craft carried through generations in Jamnagar and Kutch.</p>
       </div>
 
-```
-  <p style="text-align:center; max-width:640px; margin: -1rem auto 2.5rem; color: #666; font-size:1rem;">
-    Bring your existing Bandhani pieces to life with our specialist services, available exclusively for our customers in Australia.
-  </p>
+      <ol class="howmade-flow">
+        <li class="howmade-step reveal">
+          <span class="howmade-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="6" cy="6" r="1.1"/><circle cx="12" cy="6" r="1.1"/><circle cx="18" cy="6" r="1.1"/>
+              <circle cx="6" cy="12" r="1.1"/><circle cx="12" cy="12" r="1.1"/><circle cx="18" cy="12" r="1.1"/>
+              <circle cx="6" cy="18" r="1.1"/><circle cx="12" cy="18" r="1.1"/><circle cx="18" cy="18" r="1.1"/>
+            </svg>
+          </span>
+          <span class="howmade-num">01</span>
+          <h3>Prepare &amp; mark</h3>
+          <p>The raw cloth is washed to remove impurities so the dye takes evenly, then the design is marked out in fine dots as a guide for the artisan.</p>
+        </li>
 
-  <div class="services-grid">
-    <div class="service-card fade-in">
-      <div class="service-icon" aria-hidden="true">✨</div>
-      <h3>Foil Work (Fol)</h3>
-      <p>Add a layer of golden or silver foil detailing to your Bandhani saree or dupatta. Foil work elevates the piece for weddings, receptions, and grand celebrations without overpowering the Bandhani patterns underneath.</p>
-      <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Foil%20Work%20for%20my%20Bandhani%20piece"
-         class="btn btn-outline"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Enquire about Foil Work via WhatsApp">Enquire about Foil Work</a>
+        <li class="howmade-step reveal">
+          <span class="howmade-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true">
+              <circle cx="9.5" cy="12" r="3.6"/><circle cx="14.5" cy="12" r="3.6"/>
+            </svg>
+          </span>
+          <span class="howmade-num">02</span>
+          <h3>Tie the knots (Bandhej)</h3>
+          <p>Artisans pinch the fabric and tie thousands of tiny knots by hand — often using a pointed fingernail or metal ring. Each knot resists the dye. A single piece can carry 10,000 to 50,000 knots.</p>
+        </li>
+
+        <li class="howmade-step reveal">
+          <span class="howmade-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4s5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 5-9 5-9z"/>
+            </svg>
+          </span>
+          <span class="howmade-num">03</span>
+          <h3>Dye in stages</h3>
+          <p>The tied fabric is dipped in dye; the knotted points stay untouched, holding the base colour. For layered colour, the tie-and-dye is repeated — lightest shades first, then darker.</p>
+        </li>
+
+        <li class="howmade-step reveal">
+          <span class="howmade-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 10 Q6.75 6 10.5 10 T18 10"/>
+              <path d="M3 15 Q6.75 11 10.5 15 T18 15"/>
+            </svg>
+          </span>
+          <span class="howmade-num">04</span>
+          <h3>Open the knots</h3>
+          <p>Once dried, the fabric is pulled along the grain to release every knot, revealing the pattern of undyed dots beneath. Traditionally this last step is left for the customer to do by hand.</p>
+        </li>
+
+        <li class="howmade-step is-final reveal">
+          <span class="howmade-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.2l2.6 2.6 4.4-5.2"/>
+            </svg>
+          </span>
+          <span class="howmade-num">05</span>
+          <h3>Finished &amp; ready to wear</h3>
+          <p>This is where we're different. We open every knot, relax and press the fabric, and finish each piece before it ships. Your Bandhani arrives ready to wear — no knots to open, nothing to prepare. Just drape and go.</p>
+        </li>
+      </ol>
+
+      <p class="howmade-closing reveal">Traditional craft, delivered finished. Every piece sold by Bandhani Australia is fully opened, pressed and ready to wear.</p>
     </div>
-
-    <div class="service-card fade-in fade-in-delay-1">
-      <div class="service-icon" aria-hidden="true">🪡</div>
-      <h3>Chheda Work</h3>
-      <p>Chheda is a traditional Gujarati finishing technique applied to the edge or pallu of a Bandhani saree — adding fine decorative detailing that completes the piece and honours its heritage roots.</p>
-      <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Chheda%20Work%20for%20my%20Bandhani%20piece"
-         class="btn btn-outline"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Enquire about Chheda Work via WhatsApp">Enquire about Chheda</a>
-    </div>
-
-    <div class="service-card fade-in fade-in-delay-2">
-      <div class="service-icon" aria-hidden="true">💎</div>
-      <h3>Roll Polish</h3>
-      <p>Roll Polish gives your Bandhani fabric a lustrous, refined finish — smoothing the texture and enhancing the vibrancy of the colours. Perfect for special occasions where you want your saree to truly shine.</p>
-      <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Roll%20Polish%20for%20my%20Bandhani%20piece"
-         class="btn btn-outline"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Enquire about Roll Polish via WhatsApp">Enquire about Roll Polish</a>
-    </div>
-  </div>
-</div>
-```
-
   </section>
 
-  <!-- =============================================
+  <!-- =========================================================
+       HOW IT WORKS — quiet 3-step
+       ========================================================= -->
+  <section class="how-section" id="how-to-order" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-heading">Ordering is personal</h2>
+        <p class="section-sub">No cold checkout. Three quiet steps, and a real conversation.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="step-number" aria-hidden="true">01</span>
+          <h3>Browse</h3>
+          <p>Explore the current collection. Watch each piece move — every card carries a short clip so you see how the silk really falls.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-number" aria-hidden="true">02</span>
+          <h3>Add to your selection</h3>
+          <p>Add the pieces you love to your cart and choose a finishing. Nothing is charged — this simply gathers your order.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-number" aria-hidden="true">03</span>
+          <h3>Confirm on WhatsApp</h3>
+          <p>Send your selection with one tap. Alpa confirms availability, price and PayID, and dispatches your piece personally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
        ABOUT
-       ============================================= -->
-
-  <section class="about-section section-padding" id="about" aria-labelledby="about-heading">
+       ========================================================= -->
+  <section class="about-section" id="about" aria-labelledby="about-heading">
     <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
-            <h2 id="about-heading" style="color:var(--color-white);">The Story Behind<br>Bandhani Australia</h2>
-          </div>
-          <div class="about-body">
-            <p>Bandhani is not just a textile technique — it's a living tradition, practised by artisan families in Jamnagar, Gujarat, for over a thousand years. Each saree or dupatta begins with a plain fabric and is transformed — knot by knot — into something extraordinary.</p>
-            <p>We started Bandhani Australia because we wanted to bring that extraordinary craft directly to our community here. Not mass-produced imitations. Not sarees sourced from wherever is cheapest. But real Bandhani, from real artisans, with authenticity you can see and feel.</p>
-            <p>We are proudly based in Australia. We know our customers personally. We hand-select every piece. And we stand behind everything we sell — with a real phone number and a real WhatsApp conversation.</p>
-          </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-heading">Real Bandhani,<br>from real artisans.</h2>
+          <p>Bandhani isn't just a technique — it's a living tradition, practised by artisan families in Jamnagar for over a thousand years. We started Bandhani Australia to bring that craft here directly: not mass-produced imitations, not whatever was cheapest, but real Bandhani you can see and feel.</p>
+          <p>We're based in Australia. We know our customers personally, hand-select every piece, and stand behind everything we sell — with a real phone number and a real conversation.</p>
         </div>
-
-```
-    <div class="about-visual">
-      <div class="stats-bar">
-        <div class="stat-item fade-in">
-          <span class="stat-number">50+</span>
-          <span class="stat-label">Pieces Curated at Any Time</span>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-1">
-          <span class="stat-number">3–4</span>
-          <span class="stat-label">Weeks Custom Order Delivery</span>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-2">
-          <span class="stat-number">5</span>
-          <span class="stat-label">Cities Served Across Australia</span>
+        <div class="about-quote reveal">
+          <blockquote>
+            "If it doesn't meet our standard of authentic Jamnagar craftsmanship, it doesn't make the collection."
+          </blockquote>
         </div>
       </div>
-
-      <div class="about-banner fade-in">
-        <p>"Every piece we carry has been personally selected. If it doesn't meet our standard of authentic Jamnagar craftsmanship, it doesn't make the collection."</p>
-      </div>
     </div>
-  </div>
-</div>
-```
-
   </section>
 
-  <!-- =============================================
-       TESTIMONIALS
-       ============================================= -->
-
-  <section class="testimonials-section section-padding" aria-labelledby="testimonials-heading">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="testimonials-heading">What Our Customers Say</h2>
-        <p>Real words from the women who wear our Bandhani.</p>
-      </div>
-
-```
-  <div class="testimonials-grid">
-    <div class="testimonial-card fade-in">
-      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-      <p class="testimonial-text">"I bought a Bandhani saree for my daughter's wedding — the quality was exactly what I remembered from India. So glad to have found this in Australia."</p>
-      <p class="testimonial-author">— Priya M., Sydney</p>
-    </div>
-
-    <div class="testimonial-card fade-in fade-in-delay-1">
-      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-      <p class="testimonial-text">"The dupatta I ordered had the most beautiful Jamnagar Borjaal pattern. The foil work they added was perfect. Highly recommend."</p>
-      <p class="testimonial-author">— Deepa K., Melbourne</p>
-    </div>
-
-    <div class="testimonial-card fade-in fade-in-delay-2">
-      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-      <p class="testimonial-text">"Ordering through WhatsApp felt so personal. They helped me choose the right saree for Navratri and it arrived quickly. Will definitely order again."</p>
-      <p class="testimonial-author">— Anita S., Brisbane</p>
-    </div>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- =============================================
-       INSTAGRAM
-       ============================================= -->
-
-  <section class="instagram-section section-padding" aria-labelledby="instagram-heading">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="instagram-heading">Follow Our Collection on Instagram</h2>
-        <p><a href="https://instagram.com/bandhaniau" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary); font-weight:700;">@bandhaniau</a> — Behind the scenes, new arrivals &amp; styling inspiration</p>
-      </div>
-
-```
-  <div class="instagram-grid" aria-label="Instagram feed preview">
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#8B1A1A,#E8832A);" role="img" aria-label="Instagram post — Crimson saree drape">📸</div>
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#1A3A6B,#E8832A);" role="img" aria-label="Instagram post — Bandhani detail close-up">📸</div>
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#2E7D32,#C8973A);" role="img" aria-label="Instagram post — Green dupatta flat lay">📸</div>
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#880E4F,#8B1A1A);" role="img" aria-label="Instagram post — Magenta Bandhani detail">📸</div>
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#311B92,#C8973A);" role="img" aria-label="Instagram post — Purple saree styling">📸</div>
-    <div class="instagram-tile" style="background:linear-gradient(135deg,#E8832A,#8B1A1A);" role="img" aria-label="Instagram post — Foil work detail shot">📸</div>
-  </div>
-
-  <div style="text-align:center;">
-    <a href="https://instagram.com/bandhaniau"
-       target="_blank" rel="noopener noreferrer"
-       class="btn btn-primary"
-       aria-label="Follow Bandhani Australia on Instagram">
-      Follow Us on Instagram
-    </a>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- =============================================
-       CONTACT
-       ============================================= -->
-
-  <section class="contact-section section-padding" id="contact" aria-labelledby="contact-heading">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="contact-heading">Ready to Order? Let's Talk.</h2>
-        <p>We don't have an online checkout — because great Bandhani deserves a real conversation.</p>
-      </div>
-
-```
-  <div class="contact-grid">
-    <!-- WhatsApp -->
-    <div class="contact-card primary fade-in">
-      <div class="contact-icon" aria-hidden="true">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-      </div>
-      <h3>WhatsApp</h3>
-      <p>The fastest way to order, ask questions, or request a custom piece. We typically reply within a few hours.</p>
-      <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20Bandhani%20collection"
-         class="btn btn-whatsapp"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Chat on WhatsApp with Bandhani Australia">Chat on WhatsApp</a>
-    </div>
-
-    <!-- Phone -->
-    <div class="contact-card secondary fade-in fade-in-delay-1">
-      <div class="contact-icon" aria-hidden="true">📞</div>
-      <h3>Phone</h3>
-      <p>Prefer to talk? Call us directly.</p>
-      <p class="contact-detail">+61 XXX XXX XXX</p>
-      <p class="contact-hours">Monday–Saturday, 9am–7pm AEST</p>
-    </div>
-
-    <!-- Email -->
-    <div class="contact-card tertiary fade-in fade-in-delay-2">
-      <div class="contact-icon" aria-hidden="true">✉️</div>
-      <h3>Email</h3>
-      <p>For detailed enquiries, custom orders, or service requests.</p>
-      <a href="mailto:hello@bandhaniaustralia.com.au"
-         class="contact-detail"
-         style="color:var(--color-primary); font-weight:700;"
-         aria-label="Email Bandhani Australia">hello@bandhaniaustralia.com.au</a>
-    </div>
-  </div>
-
-  <!-- Shipping Note -->
-  <div class="shipping-box fade-in">
-    <p>📦 <strong>We ship to Sydney · Melbourne · Brisbane · Adelaide · Perth</strong></p>
-    <p>Standard delivery: 2–5 business days &nbsp;|&nbsp; Express available on request</p>
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- =============================================
-       FOOTER
-       ============================================= -->
-
-  <footer class="footer" role="contentinfo">
+  <!-- =========================================================
+       FOOTER (also the Contact anchor)
+       ========================================================= -->
+  <footer class="footer" id="contact" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
 
-```
-    <!-- Brand -->
-    <div class="footer-brand">
-      <div class="nav-logo" style="margin-bottom:1rem;">
-        <div class="logo-emblem" aria-hidden="true">BA</div>
-        <div class="logo-text">
+        <div class="footer-brand">
           <span class="brand-name">Bandhani Australia</span>
-          <span class="brand-tagline">Jamnagar's Finest. Yours in Australia.</span>
+          <p class="footer-brand-desc">
+            Handcrafted Bandhani sourced directly from artisan families in Jamnagar, Gujarat.
+            Curated in Australia, ordered personally over WhatsApp.
+          </p>
         </div>
-      </div>
-      <p class="footer-brand-desc">
-        Handcrafted Bandhani sourced directly from artisan families in Jamnagar, Gujarat, India. Serving the Australian Indian community with authenticity and care.
-      </p>
-    </div>
 
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul class="footer-links">
-        <li><a href="#collection">Collection</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
-      </ul>
-    </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#craft">The Craft</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#how-made">How It's Made</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
 
-    <!-- Connect -->
-    <div class="footer-col">
-      <h4>Connect With Us</h4>
-      <div class="social-links" style="margin-bottom:1.5rem;">
-        <a href="https://instagram.com/bandhaniau" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Bandhani Australia on Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="#" class="social-link" aria-label="Bandhani Australia on Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://wa.me/61XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Bandhani Australia on WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
+        <div class="footer-col">
+          <h4>Order &amp; connect</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/61XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20Bandhani%20collection"
+                 target="_blank" rel="noopener noreferrer">WhatsApp — order &amp; enquiries</a>
+            </li>
+            <li><a href="https://instagram.com/bandhaniau" target="_blank" rel="noopener noreferrer">Instagram — @bandhaniau</a></li>
+            <li><a href="mailto:hello@bandhaniaustralia.com.au">hello@bandhaniaustralia.com.au</a></li>
+            <li class="footer-muted">+61 XXX XXX XXX · Mon–Sat, 9am–7pm AEST</li>
+          </ul>
+        </div>
+
       </div>
 
-      <ul class="footer-links">
-        <li style="color:rgba(255,255,255,0.55); font-size:0.83rem;">📞 +61 XXX XXX XXX</li>
-        <li><a href="mailto:hello@bandhaniaustralia.com.au" style="font-size:0.83rem;">hello@bandhaniaustralia.com.au</a></li>
-        <li style="color:rgba(255,255,255,0.55); font-size:0.83rem; margin-top:0.25rem;">Mon–Sat, 9am–7pm AEST</li>
-      </ul>
+      <div class="footer-bottom">
+        <p>© 2025 Bandhani Australia. All rights reserved.</p>
+        <p class="footer-credit">Handcrafted in Jamnagar, Gujarat · Ships across Australia</p>
+      </div>
     </div>
-
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <p>© 2025 Bandhani Australia. All rights reserved. | ABN: XX XXX XXX XXX</p>
-    <p class="footer-bottom-note">Handcrafted Bandhani sourced directly from artisan families in Jamnagar, Gujarat, India.</p>
-  </div>
-</div>
-```
-
   </footer>
 
-  <!-- PRODUCT DETAIL MODAL -->
+  <!-- =========================================================
+       CART DRAWER (slides in from right) + overlay
+       ========================================================= -->
+  <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+  <aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your selection">
+    <div class="cart-header">
+      <h2>Your selection</h2>
+      <button id="cart-close" class="cart-close" aria-label="Close selection">&times;</button>
+    </div>
 
+    <div class="cart-items" id="cart-items"></div>
+    <p class="cart-empty" id="cart-empty">Your selection is empty.<br>Add a piece to begin your order.</p>
+
+    <div class="cart-footer">
+      <p class="cart-price-note" id="cart-price-note" style="display:none">Final price confirmed on WhatsApp</p>
+      <p class="cart-note">Nothing is charged here — you complete your order personally on WhatsApp.</p>
+      <button class="cart-send" id="cart-send" disabled>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Send Order on WhatsApp
+      </button>
+      <button class="cart-clear" id="cart-clear">Clear selection</button>
+    </div>
+  </aside>
+
+  <!-- =========================================================
+       PRODUCT DETAIL MODAL
+       ========================================================= -->
   <div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-product-name">
     <div class="modal-container">
       <button class="modal-close" id="modal-close-btn" aria-label="Close product detail">&times;</button>
       <div class="modal-body">
 
-```
-    <!-- LEFT: Image Gallery -->
-    <div class="modal-gallery">
-      <div class="modal-main-image-wrap">
-        <img id="modal-main-img" src="" alt="" class="modal-main-img" />
+        <!-- Media -->
+        <div class="modal-gallery">
+          <div class="modal-main-media">
+            <video id="modal-main-video" class="modal-main-video" muted loop playsinline preload="none" style="display:none"></video>
+            <img id="modal-main-img" class="modal-main-img" src="" alt="" />
+          </div>
+          <div class="modal-thumbnails" id="modal-thumbnails"></div>
+        </div>
+
+        <!-- Info -->
+        <div class="modal-info">
+          <div class="modal-badge-row">
+            <span id="modal-status-badge" class="status-badge"></span>
+            <span id="modal-type-badge" class="type-badge"></span>
+          </div>
+
+          <h2 id="modal-product-name" class="modal-product-name"></h2>
+          <p id="modal-subtitle" class="modal-subtitle"></p>
+          <p id="modal-description" class="modal-description"></p>
+
+          <div class="finishing-section">
+            <p class="finishing-label">Preferred finishing</p>
+            <div class="finishing-options" id="finishing-options"></div>
+            <p class="finishing-note" id="finishing-note"></p>
+          </div>
+
+          <button id="modal-add-cart" class="btn-add-lg">Add to Cart</button>
+
+          <div class="accordion" id="product-accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">Fabric &amp; details</button>
+              <div class="accordion-content">
+                <p id="acc-fabric"></p>
+                <p id="acc-length"></p>
+                <p id="acc-blouse"></p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">Care</button>
+              <div class="accordion-content"><p id="acc-care"></p></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">Shipping &amp; delivery</button>
+              <div class="accordion-content">
+                <p>In-stock pieces are dispatched within 1–2 business days. We ship to Sydney, Melbourne, Brisbane, Adelaide and Perth. Express available on request.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal-tags" class="modal-tags"></div>
+        </div>
+
       </div>
-      <div class="modal-thumbnails" id="modal-thumbnails"></div>
     </div>
-
-    <!-- RIGHT: Product Info -->
-    <div class="modal-info">
-      <div class="modal-badge-row">
-        <span id="modal-status-badge" class="status-badge"></span>
-        <span id="modal-category-badge" class="category-badge"></span>
-      </div>
-
-      <h2 id="modal-product-name" class="modal-product-name"></h2>
-      <p id="modal-subtitle" class="modal-subtitle"></p>
-      <p id="modal-description" class="modal-description"></p>
-
-      <!-- Finishing Selector -->
-      <div class="finishing-section">
-        <p class="finishing-label">Preferred Finishing</p>
-        <div class="finishing-options" id="finishing-options"></div>
-        <p class="finishing-note" id="finishing-note"></p>
-      </div>
-
-      <!-- Detail Accordion -->
-      <div class="accordion" id="product-accordion">
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false">Fabric Details</button>
-          <div class="accordion-content">
-            <p id="acc-fabric"></p>
-            <p id="acc-length"></p>
-            <p id="acc-blouse"></p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false">Care Instructions</button>
-          <div class="accordion-content">
-            <p id="acc-care"></p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false">Shipping &amp; Delivery</button>
-          <div class="accordion-content">
-            <p>In-stock pieces are dispatched within 1–2 business days. Made-to-order pieces take 3–4 weeks. We ship to Sydney, Melbourne, Brisbane, Adelaide, and Perth. Express shipping available on request.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- WhatsApp CTA -->
-      <a id="modal-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="whatsapp-cta-btn" aria-label="Enquire about this product on WhatsApp">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Enquire on WhatsApp
-      </a>
-
-      <!-- Occasion tags -->
-      <div id="modal-tags" class="modal-tags"></div>
-    </div>
-
-  </div>
-</div>
-```
-
   </div>
 
   <script src="products.js"></script>
-
   <script src="script.js"></script>
-
 </body>
 </html>

@@ -1,7 +1,9 @@
-
 .env
 .env.*
 !.env.example
-images/**/_hero_916.jpg
-images/po002-dana-bandhani-standard/po002-dana-bandhani-standard-twirl.mp4
-images/po002-white-choli/po002-white-choli-twirl.mp4
+
+# OS / editor cruft
+**/.DS_Store
+
+# NOTE: product hero images and per-product clip.mp4 videos are intentionally
+# committed so they deploy to Hostinger. Do not re-add exclusions for them.
