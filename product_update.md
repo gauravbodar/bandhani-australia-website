@@ -833,3 +833,345 @@ bandhani-australia/
 > 5. Update script.js with the product rendering, filter, and modal functions (keep existing sticky nav and scroll functions)
 > 6. Create an `images/` folder with a `.gitkeep` file
 > The product cards should show a coloured placeholder when images are missing, and automatically show the real image once the file exists in the images/ folder."
+
+---
+---
+
+# ★ REVIEW — PO-002 Choli Collection (9 new products) — read before I touch products.js
+
+**Status: DRAFT for your review. Nothing has been written to `products.js` yet.** Confirm and I'll append these after `p007`, without touching the existing entries.
+
+## How this differs from the schema in the task prompt (and why)
+
+The live `products.js` has evolved past the minimal schema in the prompt. I built these to match the **real file** (same as `p001`–`p007`) so the cards, detail modal and cart render fully. Specifically:
+
+1. **Full field set, not the 11-field minimal one.** I included `subtitle`, `fabric`, `blouse`, `length`, `care`, `occasion`, `finishing`, `imagesExt`, `stills`, `placeholderColor`, `whatsappText`. Without these the modal accordion shows "—", the subtitle line is blank, and there is no finishing selector. Say the word if you'd rather I strip these to the bare schema.
+2. **`priceAud: null`** — exactly as instructed. Verified safe: price is **never rendered** anywhere (cards, modal, cart all omit it by design), so `null` breaks nothing. (Note: `p001`–`p007` carry placeholder numbers instead — a minor data inconsistency, not a display one.)
+3. **`po` continues the real convention `PO-002-08 … PO-002-16`** (per-item PO line), not the flat `"PO-002"` in the prompt. The prompt's flat value duplicates `collection`. `collection: "PO-002"` is set on all 9.
+4. **`type: "Choli"`** on all 9 as written in the blocks — including the two "Lehenga" pieces (No 8, No 9).
+5. **ids `p008` → `p016`** (last existing is `p007`).
+
+## Slugs — all clean
+All 9 folder slugs are lowercase/hyphenated with no spaces — used exactly as given. Nothing to correct.
+
+## ⚠ Two image folders need attention (flagging, not silently fixing)
+
+- **`po002-pink-teal-mirror-choli` (No 5 / p012)** contains `photo_13_2026-07-22_22-22-44.jpg` and `photo_14_2026-07-22_22-22-44.jpg` — **not** the `hero-1/hero-2` convention. My draft assumes they're renamed to `hero-1.jpg` and `hero-2.jpg`. **Until renamed, this product shows only its placeholder colour.** I can do the rename for you on confirm.
+- **`po002-beige-gold-tiered-choli` (No 3 / p010)** has **no `hero-1.jpg`** — it contains `hero-2, hero-3, design-1, design-2, design-3`. My draft uses `stills: ["hero-2","hero-3","design-1","design-2","design-3"]`, so the card poster falls back to `hero-2` (works fine). Rename one to `hero-1.jpg` if you want a "proper" primary.
+
+## ⚠ Unrelated heads-up (existing product, not part of this task)
+`images/po002-white-choli/` (existing **p007**) now contains only `clip.mp4` + a `.md` file — its `hero-1.jpg`/`hero-2.jpg` are **deleted** (see `git status`). That product currently has no stills, only its video. Flagging in case that deletion was accidental.
+
+---
+
+## 1. Rani Pink Bandhani Choli  — `p008`
+
+Rani-pink mirror-work choli with a flared skirt, edged in a colourful hand-woven Kutchi border and gold fringe, and paired with an ivory net dupatta scattered with pink and blue floral embroidery. A festive, wedding-guest piece that also comes in a grey-blue and magenta bridal colourway. Mirror and thread worked by hand throughout.
+
+```js
+  {
+    id: "p008",
+    po: "PO-002-08",
+    collection: "PO-002",
+    name: "Rani Pink Bandhani Choli",
+    type: "Choli",
+    subtitle: "Mirror-Work Choli · Kutchi Border · Net Dupatta",
+    description: "Rani-pink mirror-work choli with a flared skirt, edged in a colourful hand-woven Kutchi border and gold fringe, and paired with an ivory net dupatta scattered with pink and blue floral embroidery. A festive, wedding-guest piece that also comes in a grey-blue and magenta bridal colourway. Mirror and thread worked by hand throughout.",
+    fabric: "Silk with mirror-work and hand embroidery",
+    blouse: "Included — matching rani-pink choli",
+    length: "Chaniya choli set (blouse + skirt + dupatta)",
+    care: "Dry clean only. Mirror and embroidery work is delicate.",
+    occasion: ["Wedding", "Festive"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-rani-pink-bandhani-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3", "detail-1"],
+    hasVideo: false,
+    placeholderColor: "#C2185B",
+    whatsappText: "Hi, I'm interested in the Rani Pink Bandhani Choli from your collection."
+  }
+```
+
+---
+
+## 2. Black & Red Mirror-Work Choli  — `p009`
+
+A black mirror-work blouse lit with red thread embroidery, worn over a black flared skirt trimmed in gold gota and finished with a scalloped hem, then completed by a red fringed dupatta. Built for Navratri nights and garba — bold, high-movement, made to catch the light.
+
+```js
+  {
+    id: "p009",
+    po: "PO-002-09",
+    collection: "PO-002",
+    name: "Black & Red Mirror-Work Choli",
+    type: "Choli",
+    subtitle: "Mirror-Work Choli · Gota Skirt · Fringed Dupatta",
+    description: "A black mirror-work blouse lit with red thread embroidery, worn over a black flared skirt trimmed in gold gota and finished with a scalloped hem, then completed by a red fringed dupatta. Built for Navratri nights and garba — bold, high-movement, made to catch the light.",
+    fabric: "Silk with mirror-work and thread embroidery",
+    blouse: "Included — black mirror-work choli",
+    length: "Chaniya choli set (blouse + skirt + dupatta)",
+    care: "Dry clean only. Mirror and embroidery work is delicate.",
+    occasion: ["Navratri", "Garba", "Festive"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 2,
+    status: "almost-gone",
+    imagesFolder: "po002-black-red-mirrorwork-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3", "detail-1"],
+    hasVideo: false,
+    placeholderColor: "#7A1420",
+    whatsappText: "Hi, I'm interested in the Black & Red Mirror-Work Choli from your collection."
+  }
+```
+
+---
+
+## 3. Beige & Gold Tiered Choli  — `p010`
+
+A beige tiered choli set trimmed in gold gota, paired with a deep purple dupatta worked all over in fine gold zari. Understated but richly detailed — an elegant festive choice that also appears in an emerald green and gold colourway.
+
+```js
+  {
+    id: "p010",
+    po: "PO-002-10",
+    collection: "PO-002",
+    name: "Beige & Gold Tiered Choli",
+    type: "Choli",
+    subtitle: "Tiered Choli · Gota Trim · Zari Dupatta",
+    description: "A beige tiered choli set trimmed in gold gota, paired with a deep purple dupatta worked all over in fine gold zari. Understated but richly detailed — an elegant festive choice that also appears in an emerald green and gold colourway.",
+    fabric: "Silk with gota and gold zari work",
+    blouse: "Included — matching beige gota choli",
+    length: "Chaniya choli set (blouse + tiered skirt + dupatta)",
+    care: "Dry clean only. Gota and zari work is delicate.",
+    occasion: ["Festive", "Reception"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-beige-gold-tiered-choli",
+    imagesExt: "jpg",
+    stills: ["hero-2", "hero-3", "design-1", "design-2", "design-3"],   // ⚠ no hero-1 in folder; poster = hero-2
+    hasVideo: false,
+    placeholderColor: "#C9A24B",
+    whatsappText: "Hi, I'm interested in the Beige & Gold Tiered Choli from your collection."
+  }
+```
+
+---
+
+## 4. Emerald Green Gota Choli  — `p011`
+
+Deep emerald green, with vertical gold gota stripes running down the blouse, a full pleated skirt, and a matching dupatta weighted by a heavy gold-sequinned border. The same silhouette as the beige-and-gold tiered set, rendered here in jewel green — a rich piece for Diwali and evening wear.
+
+```js
+  {
+    id: "p011",
+    po: "PO-002-11",
+    collection: "PO-002",
+    name: "Emerald Green Gota Choli",
+    type: "Choli",
+    subtitle: "Gota-Stripe Choli · Sequinned Border Dupatta",
+    description: "Deep emerald green, with vertical gold gota stripes running down the blouse, a full pleated skirt, and a matching dupatta weighted by a heavy gold-sequinned border. The same silhouette as the beige-and-gold tiered set, rendered here in jewel green — a rich piece for Diwali and evening wear.",
+    fabric: "Silk with gota-stripe and sequin work",
+    blouse: "Included — emerald gota-stripe choli",
+    length: "Chaniya choli set (blouse + pleated skirt + dupatta)",
+    care: "Dry clean only. Gota and sequin work is delicate.",
+    occasion: ["Diwali", "Festive", "Reception"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-emerald-green-gota-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3"],
+    hasVideo: false,
+    placeholderColor: "#0B5D3B",
+    whatsappText: "Hi, I'm interested in the Emerald Green Gota Choli from your collection."
+  }
+```
+
+---
+
+## 5. Pink & Teal Mirror Choli  — `p012`
+
+A rani-pink mirror-work blouse and gold-striped skirt set against a deep teal-blue dupatta with a scalloped, gold-embroidered edge. A vivid colour-block set — the kind of contrast that reads across a crowded festive floor.
+
+```js
+  {
+    id: "p012",
+    po: "PO-002-12",
+    collection: "PO-002",
+    name: "Pink & Teal Mirror Choli",
+    type: "Choli",
+    subtitle: "Mirror-Work Choli · Gold-Striped Skirt · Teal Dupatta",
+    description: "A rani-pink mirror-work blouse and gold-striped skirt set against a deep teal-blue dupatta with a scalloped, gold-embroidered edge. A vivid colour-block set — the kind of contrast that reads across a crowded festive floor.",
+    fabric: "Silk with mirror-work and gold embroidery",
+    blouse: "Included — rani-pink mirror-work choli",
+    length: "Chaniya choli set (blouse + skirt + dupatta)",
+    care: "Dry clean only. Mirror and embroidery work is delicate.",
+    occasion: ["Navratri", "Festive"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-pink-teal-mirror-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2"],       // ⚠ folder currently has photo_13_*.jpg / photo_14_*.jpg — rename to hero-1.jpg / hero-2.jpg first
+    hasVideo: false,
+    placeholderColor: "#0E6B6B",
+    whatsappText: "Hi, I'm interested in the Pink & Teal Mirror Choli from your collection."
+  }
+```
+
+---
+
+## 6. Black & Yellow Chevron Choli  — `p013`
+
+Black choli with a bright yellow chevron bust and a mirror-and-gota hem picked out in yellow, styled with a rani-pink Bandhani pom-pom dupatta. Playful and high-contrast, cut for garba and the energy of Navratri.
+
+```js
+  {
+    id: "p013",
+    po: "PO-002-13",
+    collection: "PO-002",
+    name: "Black & Yellow Chevron Choli",
+    type: "Choli",
+    subtitle: "Chevron Choli · Mirror-Gota Hem · Bandhani Dupatta",
+    description: "Black choli with a bright yellow chevron bust and a mirror-and-gota hem picked out in yellow, styled with a rani-pink Bandhani pom-pom dupatta. Playful and high-contrast, cut for garba and the energy of Navratri.",
+    fabric: "Silk with mirror-work and gota detailing",
+    blouse: "Included — black-and-yellow chevron choli",
+    length: "Chaniya choli set (blouse + skirt + dupatta)",
+    care: "Dry clean only. Mirror and gota work is delicate.",
+    occasion: ["Navratri", "Garba"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-black-yellow-chevron-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3", "detail-1"],
+    hasVideo: false,
+    placeholderColor: "#C79A1E",
+    whatsappText: "Hi, I'm interested in the Black & Yellow Chevron Choli from your collection."
+  }
+```
+
+---
+
+## 7. Rust Orange & Ivory Choli  — `p014`
+
+Rust-orange choli and skirt framed by a wide cream contrast border and threaded with delicate gold embroidery, softened by an ivory embroidered dupatta. Warm and quietly festive — elegance without noise.
+
+```js
+  {
+    id: "p014",
+    po: "PO-002-14",
+    collection: "PO-002",
+    name: "Rust Orange & Ivory Choli",
+    type: "Choli",
+    subtitle: "Contrast-Border Choli · Gold Embroidery · Ivory Dupatta",
+    description: "Rust-orange choli and skirt framed by a wide cream contrast border and threaded with delicate gold embroidery, softened by an ivory embroidered dupatta. Warm and quietly festive — elegance without noise.",
+    fabric: "Silk with contrast border and gold embroidery",
+    blouse: "Included — rust-orange choli",
+    length: "Chaniya choli set (blouse + skirt + dupatta)",
+    care: "Dry clean only. Embroidery work is delicate.",
+    occasion: ["Festive", "Reception"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-rust-orange-ivory-choli",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3", "detail-1"],
+    hasVideo: false,
+    placeholderColor: "#B5461E",
+    whatsappText: "Hi, I'm interested in the Rust Orange & Ivory Choli from your collection."
+  }
+```
+
+---
+
+## 8. Grey-Blue Bridal Lehenga Choli  — `p015`
+
+A grey-blue lehenga carrying a magenta zari-embroidered border, matched to a magenta paisley dupatta — heavily worked and bridal in grade. The same design as the rani-pink colourway, dressed here for the aisle and the reception.
+
+```js
+  {
+    id: "p015",
+    po: "PO-002-15",
+    collection: "PO-002",
+    name: "Grey-Blue Bridal Lehenga Choli",
+    type: "Choli",
+    subtitle: "Zari-Border Lehenga · Magenta Paisley Dupatta",
+    description: "A grey-blue lehenga carrying a magenta zari-embroidered border, matched to a magenta paisley dupatta — heavily worked and bridal in grade. The same design as the rani-pink colourway, dressed here for the aisle and the reception.",
+    fabric: "Silk lehenga with heavy magenta zari embroidery",
+    blouse: "Included — matching grey-blue choli",
+    length: "Lehenga choli set (blouse + lehenga + dupatta)",
+    care: "Dry clean only. Zari embroidery is delicate.",
+    occasion: ["Bridal", "Wedding", "Reception"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 1,
+    status: "last-1",
+    imagesFolder: "po002-grey-blue-bridal-lehenga",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "detail-1"],
+    hasVideo: false,
+    placeholderColor: "#46597A",
+    whatsappText: "Hi, I'm interested in the Grey-Blue Bridal Lehenga Choli from your collection."
+  }
+```
+
+---
+
+## 9. Olive Green Polka Lehenga  — `p016`
+
+A full olive-green lehenga scattered with large metallic gold polka motifs, topped by a gota-trimmed blouse and styled with a deep brown Bandhani dupatta. A statement Navratri piece that also comes in a teal-blue colourway with a rani-pink dupatta.
+
+```js
+  {
+    id: "p016",
+    po: "PO-002-16",
+    collection: "PO-002",
+    name: "Olive Green Polka Lehenga",
+    type: "Choli",
+    subtitle: "Polka Lehenga · Gota Blouse · Bandhani Dupatta",
+    description: "A full olive-green lehenga scattered with large metallic gold polka motifs, topped by a gota-trimmed blouse and styled with a deep brown Bandhani dupatta. A statement Navratri piece that also comes in a teal-blue colourway with a rani-pink dupatta.",
+    fabric: "Silk lehenga with metallic gold polka motifs and gota-trimmed blouse",
+    blouse: "Included — gota-trimmed olive choli",
+    length: "Lehenga choli set (blouse + lehenga + dupatta)",
+    care: "Dry clean only. Gota work is delicate.",
+    occasion: ["Navratri", "Garba", "Festive"],
+    finishing: ["Roll Press", "Semi-Iron"],
+    priceAud: null,                    // hidden — quoted on WhatsApp
+    qtyRemain: 3,
+    status: "almost-gone",
+    imagesFolder: "po002-olive-green-polka-lehenga",
+    imagesExt: "jpg",
+    stills: ["hero-1", "hero-2", "hero-3"],
+    hasVideo: false,
+    placeholderColor: "#5B6B2E",
+    whatsappText: "Hi, I'm interested in the Olive Green Polka Lehenga from your collection."
+  }
+```
+
+---
+
+### Status derivation check (from your rule)
+| # | id | Name | qty | status |
+|---|-----|------|-----|--------|
+| 1 | p008 | Rani Pink Bandhani Choli | 1 | last-1 |
+| 2 | p009 | Black & Red Mirror-Work Choli | 2 | almost-gone |
+| 3 | p010 | Beige & Gold Tiered Choli | 1 | last-1 |
+| 4 | p011 | Emerald Green Gota Choli | 1 | last-1 |
+| 5 | p012 | Pink & Teal Mirror Choli | 1 | last-1 |
+| 6 | p013 | Black & Yellow Chevron Choli | 1 | last-1 |
+| 7 | p014 | Rust Orange & Ivory Choli | 1 | last-1 |
+| 8 | p015 | Grey-Blue Bridal Lehenga Choli | 1 | last-1 |
+| 9 | p016 | Olive Green Polka Lehenga | 3 | almost-gone |
+
+**→ Reply to confirm and I'll append `p008`–`p016` to `products.js` after `p007` (existing entries untouched). Tell me if you want the `pink-teal` rename done at the same time.**
