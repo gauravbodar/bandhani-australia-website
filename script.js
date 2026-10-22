@@ -9,7 +9,7 @@
    e.g. Australian mobile 0412 345 678  →  "61412345678"
    This one constant feeds every wa.me link on the page.
    ---------------------------------------------------------- */
-const WHATSAPP_NUMBER = "61XXXXXXXXXX"; // ← PLACEHOLDER — replace with Alpa's number
+const WHATSAPP_NUMBER = "61478516867";
 
 // Respect users who asked the OS to reduce motion.
 const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
